@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>12</title>
+    </head>
+    <body>
+        <h1>
+            <ul>
+                <li>ADD</li>
+                <li>SUB</li>
+                <li>MUL</li>
+                <li>DIV</li>
+                
+            </ul>
+        </h1>
+        <form>
+            <input type="text"id="choices" maxlength="20">
+            <br>
+            <button onclick="myfun()">CLICK ME</button>
+        </form>
+        <script>
+           function myfun(){
+            var choice=document.getElementById("choices").value;
+            
+             switch(choice){
+                case "ADD": var a=10;
+                            var b=20;
+                            var sum= a+b;
+                            document.write("the sum of the number" +sum);
+                            break;
+                case "SUB": var a=10;
+                            var b=20;
+                            var subb= a-b;
+                            document.write("the sub of the number" +subb);
+                            break;
+                case "MUL": var a=10;
+                            var b=20;
+                            var mull= a*b;
+                            document.write("the mul of the number" +mull);
+                            break;
+                case "DIV": var a=10;
+                            var b=20;
+                            var divv= a/b;
+                            document.write("the div of the number" +divv);
+                            break;
+                default: alert("wrong choice");
+
+
+
+
+             }
+           }
+        
+
+        </script>
+    </body>
+</html>

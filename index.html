@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<h2>JavaScript Getters and Setters</h2>
+
+<p>smaller to upper.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "nitish",
+  lastName: "nandi",
+  language: "english",
+  get lang(){
+  return this.language.toUpperCase()
+  }
+  };
+  document.getElementById("demo").innerHTML=person.lang;
+  </script>
+  </body>
+  </html>
+ 
